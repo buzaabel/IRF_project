@@ -14,6 +14,7 @@ namespace ivok11_IRF_Project
     {
         public Form1()
         {
+
             InitializeComponent();
         }
     }
