@@ -1,0 +1,6 @@
+﻿<root>
+  
+  <cars name="Bugatti" model="Veyron" color="black"> 100000 </cars>   
+  <cars name="Ferrari" model="F4" color="red"> 200000 </cars>
+    
+</root>
