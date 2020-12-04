@@ -10,9 +10,7 @@ namespace ivok11_IRF_Project
 {
     public class PlayingButton : Button
     {
-        Random rnd = new Random(); 
-
-        public int randomsorszam { get; set; }
+        Random rnd = new Random();       
 
         private int _value;
 
@@ -23,20 +21,20 @@ namespace ivok11_IRF_Project
             {
                 _value = value;
                 
-                    int red = rnd.Next(0, 255);
-                    int green = rnd.Next(0, 255);
-                    int blue = rnd.Next(0, 255);
-                    BackColor = Color.FromArgb(red, green, blue);                               
+                
+                                                             
             }
         }
 
         public PlayingButton()
         {
             Height = 30;
-            Width = 60;                                     
+            Width = 60;           
+            Value = 0;
+          
         }
 
-     
+  
    
     }
 }

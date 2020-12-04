@@ -1,6 +1,8 @@
 ﻿<root>
   
-  <cars name="Bugatti" model="Veyron" color="black"> 100000 </cars>   
-  <cars name="Ferrari" model="F4" color="red"> 200000 </cars>
+  <cars name="Bugatti" model="Veyron" color="Black"> 300000 </cars>   
+  <cars name="Ferrari" model="F4" color="Red"> 200000 </cars>
+  <cars name="Subaru" model="Impreza" color="Blue"> 100000 </cars>
+  
     
 </root>
