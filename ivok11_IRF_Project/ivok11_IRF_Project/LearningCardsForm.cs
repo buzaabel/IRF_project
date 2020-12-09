@@ -51,13 +51,37 @@ namespace ivok11_IRF_Project
 
         private void NewCardBtn_Click(object sender, EventArgs e)
         {
-            int x=carslist.Count;
-            int szam = rnd.Next(0, x);
-            MovingCards card = new MovingCards();            
-            card.Text = carslist[szam].Name + " " + carslist[szam].Model + ": " + carslist[szam].Price.ToString();          
-          
-            Controls.Add(card);
-            ellenor.Add(carslist[szam]);
+            int szam;
+            MovingCards card;
+            CardGenerate(out szam, out card);
+            int hossz = ellenor.Count;
+            int létezik = 0;
+            for (int i = 0; i < hossz; i++)
+            {
+                if (ellenor[i] == carslist[szam])
+                {
+                    létezik++;
+                }
+            }
+
+            if (létezik == 1)
+            {
+                CardGenerate(out szam, out card);
+            }
+            else
+            {
+                Controls.Add(card);
+                ellenor.Add(carslist[szam]);
+            }
+           
+        }
+
+        private void CardGenerate(out int szam, out MovingCards card)
+        {
+            int x = carslist.Count;
+            szam = rnd.Next(0, x);
+            card = new MovingCards();
+            card.Text = carslist[szam].Name + " " + carslist[szam].Model + ": " + carslist[szam].Price.ToString();
         }
     }
 }
