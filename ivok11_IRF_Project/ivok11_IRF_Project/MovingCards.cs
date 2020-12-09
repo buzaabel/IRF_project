@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,21 @@ namespace ivok11_IRF_Project
 {
     class MovingCards:Button
     {
+        private int _value;
+
+        public int Value
+        {
+            get { return _value; }
+            set
+            {
+                _value = value;
+                if (_value < 200000) BackColor = Color.Yellow;
+                if (_value < 300000) BackColor = Color.Green;
+                if (_value < 400000) BackColor = Color.Orange;
+                if (_value < 500000) BackColor = Color.Red;
+                if (_value > 500000) BackColor = Color.Brown;
+            }
+        }
         int ox, oy;
         bool move = false;
         public MovingCards()

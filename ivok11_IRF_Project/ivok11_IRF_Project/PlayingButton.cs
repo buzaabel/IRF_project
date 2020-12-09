@@ -10,7 +10,7 @@ namespace ivok11_IRF_Project
 {
     public class PlayingButton : Button
     {
-        Random rnd = new Random();       
+             
 
         private int _value;
 
