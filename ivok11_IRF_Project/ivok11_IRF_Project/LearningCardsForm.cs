@@ -82,6 +82,7 @@ namespace ivok11_IRF_Project
             int x = carslist.Count;
             szam = rnd.Next(0, x);
             card = new MovingCards();
+            card.Value = carslist[szam].Price;
             card.Text = carslist[szam].Name + " " + carslist[szam].Model + ": " + carslist[szam].Price.ToString();
         }
 

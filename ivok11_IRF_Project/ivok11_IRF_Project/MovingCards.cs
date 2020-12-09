@@ -18,11 +18,13 @@ namespace ivok11_IRF_Project
             set
             {
                 _value = value;
-                if (_value < 200000) BackColor = Color.Yellow;
-                if (_value < 300000) BackColor = Color.Green;
-                if (_value < 400000) BackColor = Color.Orange;
-                if (_value < 500000) BackColor = Color.Red;
+
                 if (_value > 500000) BackColor = Color.Brown;
+                if (_value < 500000) BackColor = Color.Red;
+                if (_value < 400000) BackColor = Color.Orange;
+                if (_value < 300000) BackColor = Color.Green;
+                if (_value < 200000) BackColor = Color.Yellow;               
+                
             }
         }
         int ox, oy;
