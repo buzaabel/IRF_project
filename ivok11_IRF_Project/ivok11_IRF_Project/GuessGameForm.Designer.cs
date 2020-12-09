@@ -30,7 +30,7 @@ namespace ivok11_IRF_Project
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.autotb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.car1btn = new System.Windows.Forms.Button();
             this.car2btn = new System.Windows.Forms.Button();
@@ -47,12 +47,12 @@ namespace ivok11_IRF_Project
             this.label1.TabIndex = 0;
             this.label1.Text = "Mennyibe kerül a(z)";
             // 
-            // textBox1
+            // autotb
             // 
-            this.textBox1.Location = new System.Drawing.Point(226, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 20);
-            this.textBox1.TabIndex = 1;
+            this.autotb.Location = new System.Drawing.Point(226, 49);
+            this.autotb.Name = "autotb";
+            this.autotb.Size = new System.Drawing.Size(185, 20);
+            this.autotb.TabIndex = 1;
             // 
             // label2
             // 
@@ -109,7 +109,7 @@ namespace ivok11_IRF_Project
             this.Controls.Add(this.car2btn);
             this.Controls.Add(this.car1btn);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.autotb);
             this.Controls.Add(this.label1);
             this.Name = "GuessGameForm";
             this.Text = "GuessGameForm";
@@ -121,7 +121,7 @@ namespace ivok11_IRF_Project
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox autotb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button car1btn;
         private System.Windows.Forms.Button car2btn;

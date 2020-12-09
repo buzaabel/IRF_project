@@ -14,11 +14,43 @@ namespace ivok11_IRF_Project
     public partial class GuessGameForm : Form
     {
         public List<Cars> carslist = new List<Cars>();
+        public List<int> randomszamok = new List<int>();
+        Random rnd = new Random();
+
         public GuessGameForm()
         {
             InitializeComponent();
             XmlRead();
+            GameGenerate();
         }
+
+        private void GameGenerate()
+        {
+            int x = carslist.Count;
+            int number;
+            for (int i = 0; i < 4; i++)
+            {
+                do
+                {
+                    number = rnd.Next(0, x);
+                } while (randomszamok.Contains(number));
+                randomszamok.Add(number);                
+            }
+            int q = randomszamok[0];
+            car1btn.Text = carslist[q].Price.ToString();
+            int w = randomszamok[1];
+            car2btn.Text = carslist[w].Price.ToString();
+            int r = randomszamok[2];
+            car3btn.Text = carslist[r].Price.ToString();
+            int t = randomszamok[3];
+            car4btn.Text = carslist[t].Price.ToString();
+
+            int megoldas = rnd.Next(0, 3);
+            int megoldas2 = randomszamok[megoldas];
+            autotb.Text = carslist[megoldas2].Name + " " + carslist[megoldas2].Model;
+
+        }
+
         private void XmlRead()
         {
             XmlDocument cars = new XmlDocument();

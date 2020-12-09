@@ -137,5 +137,11 @@ namespace ivok11_IRF_Project
             LearningCardsForm uj = new LearningCardsForm();
             uj.Show();
         }
+
+        private void GuessGamebtn_Click(object sender, EventArgs e)
+        {
+            GuessGameForm gmf = new GuessGameForm();
+            gmf.Show();
+        }
     }
 }
