@@ -16,12 +16,16 @@ namespace ivok11_IRF_Project
         public List<Cars> carslist = new List<Cars>();
         public List<int> randomszamok = new List<int>();
         Random rnd = new Random();
+        private int megoldas2;
+        
+
 
         public GuessGameForm()
         {
             InitializeComponent();
             XmlRead();
             GameGenerate();
+            
         }
 
         private void GameGenerate()
@@ -46,10 +50,11 @@ namespace ivok11_IRF_Project
             car4btn.Text = carslist[t].Price.ToString();
 
             int megoldas = rnd.Next(0, 3);
-            int megoldas2 = randomszamok[megoldas];
+            megoldas2 = randomszamok[megoldas];
             autotb.Text = carslist[megoldas2].Name + " " + carslist[megoldas2].Model;
-
+            
         }
+       
 
         private void XmlRead()
         {
@@ -71,6 +76,75 @@ namespace ivok11_IRF_Project
 
             }
 
+        }
+
+        private void car1btn_Click(object sender, EventArgs e)
+        {
+           
+            
+
+            if (car1btn.Text==carslist[megoldas2].Price.ToString())
+            {
+                MessageBox.Show("Helyes válasz");
+                               
+            }
+            else
+            {
+                MessageBox.Show("Rossz válasz, a játék véget ért");
+            }
+        }
+
+        private void car2btn_Click(object sender, EventArgs e)
+        {
+            
+          
+
+            if (car2btn.Text == carslist[megoldas2].Price.ToString())
+            {
+                MessageBox.Show("Helyes válasz");
+            
+            }
+            else
+            {
+                MessageBox.Show("Rossz válasz, a játék véget ért");
+            }
+        }
+
+        private void car3btn_Click(object sender, EventArgs e)
+        {
+       
+           
+
+            if (car3btn.Text == carslist[megoldas2].Price.ToString())
+            {
+                MessageBox.Show("Helyes válasz");
+                              
+            }
+            else
+            {
+                MessageBox.Show("Rossz válasz, a játék véget ért");
+            }
+        }
+
+        private void car4btn_Click(object sender, EventArgs e)
+        {
+            
+           
+
+            if (car4btn.Text == carslist[megoldas2].Price.ToString())
+            {
+                MessageBox.Show("Helyes válasz");
+                             
+            }
+            else
+            {
+                MessageBox.Show("Rossz válasz, a játék véget ért");
+            }
+        }
+
+        private void nextbtn_Click(object sender, EventArgs e)
+        {
+            GameGenerate();
         }
     }
 }

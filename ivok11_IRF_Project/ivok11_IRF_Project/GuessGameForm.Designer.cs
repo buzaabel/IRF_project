@@ -36,6 +36,7 @@ namespace ivok11_IRF_Project
             this.car2btn = new System.Windows.Forms.Button();
             this.car3btn = new System.Windows.Forms.Button();
             this.car4btn = new System.Windows.Forms.Button();
+            this.nextbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -71,6 +72,7 @@ namespace ivok11_IRF_Project
             this.car1btn.TabIndex = 3;
             this.car1btn.Text = "button1";
             this.car1btn.UseVisualStyleBackColor = true;
+            this.car1btn.Click += new System.EventHandler(this.car1btn_Click);
             // 
             // car2btn
             // 
@@ -80,6 +82,7 @@ namespace ivok11_IRF_Project
             this.car2btn.TabIndex = 4;
             this.car2btn.Text = "button2";
             this.car2btn.UseVisualStyleBackColor = true;
+            this.car2btn.Click += new System.EventHandler(this.car2btn_Click);
             // 
             // car3btn
             // 
@@ -89,6 +92,7 @@ namespace ivok11_IRF_Project
             this.car3btn.TabIndex = 5;
             this.car3btn.Text = "button3";
             this.car3btn.UseVisualStyleBackColor = true;
+            this.car3btn.Click += new System.EventHandler(this.car3btn_Click);
             // 
             // car4btn
             // 
@@ -98,12 +102,24 @@ namespace ivok11_IRF_Project
             this.car4btn.TabIndex = 6;
             this.car4btn.Text = "button4";
             this.car4btn.UseVisualStyleBackColor = true;
+            this.car4btn.Click += new System.EventHandler(this.car4btn_Click);
+            // 
+            // nextbtn
+            // 
+            this.nextbtn.Location = new System.Drawing.Point(466, 252);
+            this.nextbtn.Name = "nextbtn";
+            this.nextbtn.Size = new System.Drawing.Size(158, 33);
+            this.nextbtn.TabIndex = 7;
+            this.nextbtn.Text = "Next";
+            this.nextbtn.UseVisualStyleBackColor = true;
+            this.nextbtn.Click += new System.EventHandler(this.nextbtn_Click);
             // 
             // GuessGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nextbtn);
             this.Controls.Add(this.car4btn);
             this.Controls.Add(this.car3btn);
             this.Controls.Add(this.car2btn);
@@ -127,5 +143,6 @@ namespace ivok11_IRF_Project
         private System.Windows.Forms.Button car2btn;
         private System.Windows.Forms.Button car3btn;
         private System.Windows.Forms.Button car4btn;
+        private System.Windows.Forms.Button nextbtn;
     }
 }

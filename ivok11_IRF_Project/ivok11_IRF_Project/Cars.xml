@@ -5,8 +5,8 @@
   <cars name="Subaru" model="Impreza" color="Blue"> 100000 </cars>
   <cars name="Lada" model="Niva" color="Black"> 30000 </cars>
   <cars name="Audi" model="TT" color="Green"> 90000 </cars>
-  <cars name="Mazda" model="6" color="Yellow"> 800000 </cars>
+  <cars name="Mazda" model="6" color="Yellow"> 80000 </cars>
   <cars name="VolksWagen" model="Passat" color="Blue"> 700000 </cars>
-  <cars name="Toyota" model="Yaris" color="Brown"> 100000 </cars>  
+  <cars name="Toyota" model="Yaris" color="Brown"> 90009 </cars>  
     
 </root>
