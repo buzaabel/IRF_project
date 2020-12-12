@@ -86,11 +86,20 @@ namespace ivok11_IRF_Project
             if (car1btn.Text==carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                               
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+
             }
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+                nextbtn.Enabled = false;
             }
         }
 
@@ -102,11 +111,20 @@ namespace ivok11_IRF_Project
             if (car2btn.Text == carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-            
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+
             }
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+                nextbtn.Enabled = false;
             }
         }
 
@@ -118,11 +136,19 @@ namespace ivok11_IRF_Project
             if (car3btn.Text == carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                              
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
             }
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+                nextbtn.Enabled = false;
             }
         }
 
@@ -134,16 +160,41 @@ namespace ivok11_IRF_Project
             if (car4btn.Text == carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                             
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+                
             }
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
+                car1btn.Enabled = false;
+                car2btn.Enabled = false;
+                car3btn.Enabled = false;
+                car4btn.Enabled = false;
+                nextbtn.Enabled = false;
             }
         }
 
         private void nextbtn_Click(object sender, EventArgs e)
         {
+            car1btn.Enabled = true;
+            car2btn.Enabled = true;
+            car3btn.Enabled = true;
+            car4btn.Enabled = true;           
+            randomszamok.Clear();
+            GameGenerate();
+        }
+
+        private void newgamebtn_Click(object sender, EventArgs e)
+        {
+            car1btn.Enabled = true;
+            car2btn.Enabled = true;
+            car3btn.Enabled = true;
+            car4btn.Enabled = true;
+            nextbtn.Enabled = true;
+            randomszamok.Clear();
             GameGenerate();
         }
     }
