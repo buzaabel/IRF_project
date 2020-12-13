@@ -13,135 +13,37 @@ namespace ivok11_IRF_Project
 {
     public partial class Form1 : Form
     {
-        public List<Cars> carslist = new List<Cars>();
-
-        public Random rnd = new Random();
-        int pontok; 
-        
        
+               
         public Form1()
         {
-            InitializeComponent();           
-            XmlRead();
-            GameCreating();
-           
-            
-            
-
+            InitializeComponent();
+            this.BackColor = Color.Brown;
+            LCardsBtn.BackColor = Color.LightGreen;
+            GuessGamebtn.BackColor = Color.Green;
+            game1btn.BackColor = Color.Green;
         }
 
-        public void GameCreating()
-        {           
-            var x = carslist.Count();
-            var randomszam1 = rnd.Next(0, x);
-            var randomszam2 = rnd.Next(0, x);
-
-            if (randomszam1==randomszam2)
-            {               
-                while (randomszam1==randomszam2)
-                {
-                    randomszam1 = rnd.Next(0, x);
-                }
-            }
-
-            car1.Text = carslist[randomszam1].Name+" "+carslist[randomszam1].Model;
-            car1.Value = carslist[randomszam1].Price;
-            car1.ForeColor = Color.FromName(carslist[randomszam1].Color);
-
-            car2.Text = carslist[randomszam2].Name+" "+ carslist[randomszam2].Model;
-            car2.Value = carslist[randomszam2].Price;
-            car2.ForeColor = Color.FromName(carslist[randomszam2].Color);
-        }
-
-        private void XmlRead()
-        {
-            XmlDocument cars = new XmlDocument();
-            cars.Load("Cars.xml");
-
-            foreach (XmlElement element in cars.DocumentElement)
-            {
-
-                var car = new Cars();
-
-                carslist.Add(car);
-
-                car.Name = (element.GetAttribute("name"));
-                car.Model = (element.GetAttribute("model"));
-                car.Color = (element.GetAttribute("color"));
-                car.Price = int.Parse(element.InnerText);
-
-
-            }
-            
-        }
-
-        private void car1_Click(object sender, EventArgs e)
-        {
-            if (car1.Value>car2.Value)
-            {
-                tbresult.Text = "Helyes válasz";
-                pontok++;
-                labelpontok.Text = pontok.ToString();
-
-            }
-            else
-            {
-                tbresult.Text = "Rossz válasz";
-                btnnext.Enabled = false;               
-            }
-            car1.Enabled = false;
-            car2.Enabled = false;
-        }
-
-        private void car2_Click(object sender, EventArgs e)
-        {
-            if (car1.Value < car2.Value)
-            {
-                tbresult.Text = "Helyes válasz";
-                pontok++;
-                labelpontok.Text = pontok.ToString();
-
-            }
-            else
-            {
-                tbresult.Text = "Rossz válasz";
-                btnnext.Enabled = false;                
-            }
-            car1.Enabled = false;
-            car2.Enabled = false;
-
-        }
-
-        private void btnNewGame_Click(object sender, EventArgs e)
-        {
-            GameCreating();
-            car1.Enabled = true;
-            car2.Enabled = true;
-            btnnext.Enabled = true;
-            tbresult.Text = "";
-            pontok = 0;
-            labelpontok.Text = pontok.ToString();
-        }
-
-        private void btnnext_Click(object sender, EventArgs e)
-        {
-            GameCreating();
-            car1.Enabled = true;
-            car2.Enabled = true;
-            tbresult.Text = "";
-            labelpontok.Refresh();
-        }
-
+              
         private void LCardsBtn_Click(object sender, EventArgs e)
         {
             LearningCardsForm uj = new LearningCardsForm();
             uj.Show();
+            
         }
 
         private void GuessGamebtn_Click(object sender, EventArgs e)
         {
             GuessGameForm gmf = new GuessGameForm();
             gmf.Show();
+           
+        }
+
+        private void game1btn_Click(object sender, EventArgs e)
+        {
+            Game1 g1 = new Game1();
+            g1.Show();
+            
         }
     }
 }
