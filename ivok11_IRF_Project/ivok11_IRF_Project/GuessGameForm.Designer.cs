@@ -38,6 +38,7 @@ namespace ivok11_IRF_Project
             this.car4btn = new System.Windows.Forms.Button();
             this.nextbtn = new System.Windows.Forms.Button();
             this.newgamebtn = new System.Windows.Forms.Button();
+            this.pontoklabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,6 +52,7 @@ namespace ivok11_IRF_Project
             // 
             // autotb
             // 
+            this.autotb.Enabled = false;
             this.autotb.Location = new System.Drawing.Point(371, 53);
             this.autotb.Name = "autotb";
             this.autotb.Size = new System.Drawing.Size(185, 20);
@@ -117,19 +119,30 @@ namespace ivok11_IRF_Project
             // 
             // newgamebtn
             // 
+            this.newgamebtn.BackColor = System.Drawing.Color.Coral;
             this.newgamebtn.Location = new System.Drawing.Point(37, 23);
             this.newgamebtn.Name = "newgamebtn";
             this.newgamebtn.Size = new System.Drawing.Size(128, 45);
             this.newgamebtn.TabIndex = 8;
             this.newgamebtn.Text = "New Game";
-            this.newgamebtn.UseVisualStyleBackColor = true;
+            this.newgamebtn.UseVisualStyleBackColor = false;
             this.newgamebtn.Click += new System.EventHandler(this.newgamebtn_Click);
+            // 
+            // pontoklabel
+            // 
+            this.pontoklabel.AutoSize = true;
+            this.pontoklabel.Location = new System.Drawing.Point(271, 257);
+            this.pontoklabel.Name = "pontoklabel";
+            this.pontoklabel.Size = new System.Drawing.Size(35, 13);
+            this.pontoklabel.TabIndex = 9;
+            this.pontoklabel.Text = "label3";
             // 
             // GuessGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pontoklabel);
             this.Controls.Add(this.newgamebtn);
             this.Controls.Add(this.nextbtn);
             this.Controls.Add(this.car4btn);
@@ -149,7 +162,6 @@ namespace ivok11_IRF_Project
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox autotb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button car1btn;
         private System.Windows.Forms.Button car2btn;
@@ -157,5 +169,7 @@ namespace ivok11_IRF_Project
         private System.Windows.Forms.Button car4btn;
         private System.Windows.Forms.Button nextbtn;
         private System.Windows.Forms.Button newgamebtn;
+        private System.Windows.Forms.TextBox autotb;
+        private System.Windows.Forms.Label pontoklabel;
     }
 }

@@ -87,12 +87,13 @@ namespace ivok11_IRF_Project
             // 
             // btnNewGame
             // 
+            this.btnNewGame.BackColor = System.Drawing.Color.Coral;
             this.btnNewGame.Location = new System.Drawing.Point(46, 39);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(106, 44);
             this.btnNewGame.TabIndex = 12;
             this.btnNewGame.Text = "New Game";
-            this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.UseVisualStyleBackColor = false;
             this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // Game1

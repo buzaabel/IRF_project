@@ -24,6 +24,7 @@ namespace ivok11_IRF_Project
         {
             InitializeComponent();
             XmlRead();
+            this.BackColor = Color.LightGreen;
             
             
         }

@@ -17,7 +17,7 @@ namespace ivok11_IRF_Project
         public List<int> randomszamok = new List<int>();
         Random rnd = new Random();
         private int megoldas2;
-        
+        int pontok = 0;
 
 
         public GuessGameForm()
@@ -25,7 +25,8 @@ namespace ivok11_IRF_Project
             InitializeComponent();
             XmlRead();
             GameGenerate();
-            
+            this.BackColor = Color.Green;
+            pontoklabel.Text = pontok.ToString();
         }
 
         private void GameGenerate()
@@ -72,7 +73,7 @@ namespace ivok11_IRF_Project
                 car.Model = (element.GetAttribute("model"));
                 car.Color = (element.GetAttribute("color"));
                 car.Price = int.Parse(element.InnerText);
-
+                
 
             }
 
@@ -90,7 +91,10 @@ namespace ivok11_IRF_Project
                 car2btn.Enabled = false;
                 car3btn.Enabled = false;
                 car4btn.Enabled = false;
-
+                nextbtn.Enabled = true;
+                pontok++;
+                pontoklabel.Refresh();
+                pontoklabel.Text = pontok.ToString();
             }
             else
             {
@@ -115,7 +119,10 @@ namespace ivok11_IRF_Project
                 car2btn.Enabled = false;
                 car3btn.Enabled = false;
                 car4btn.Enabled = false;
-
+                nextbtn.Enabled = true;
+                pontok++;
+                pontoklabel.Refresh();
+                pontoklabel.Text = pontok.ToString();
             }
             else
             {
@@ -140,6 +147,10 @@ namespace ivok11_IRF_Project
                 car2btn.Enabled = false;
                 car3btn.Enabled = false;
                 car4btn.Enabled = false;
+                nextbtn.Enabled = true;
+                pontok++;
+                pontoklabel.Refresh();
+                pontoklabel.Text = pontok.ToString();
             }
             else
             {
@@ -164,7 +175,11 @@ namespace ivok11_IRF_Project
                 car2btn.Enabled = false;
                 car3btn.Enabled = false;
                 car4btn.Enabled = false;
-                
+                nextbtn.Enabled = true;
+                pontok++;
+                pontoklabel.Refresh();
+                pontoklabel.Text = pontok.ToString();
+
             }
             else
             {
@@ -182,7 +197,8 @@ namespace ivok11_IRF_Project
             car1btn.Enabled = true;
             car2btn.Enabled = true;
             car3btn.Enabled = true;
-            car4btn.Enabled = true;           
+            car4btn.Enabled = true;
+            nextbtn.Enabled = false;
             randomszamok.Clear();
             GameGenerate();
         }
@@ -195,6 +211,9 @@ namespace ivok11_IRF_Project
             car4btn.Enabled = true;
             nextbtn.Enabled = true;
             randomszamok.Clear();
+            pontok = 0;
+            pontoklabel.Refresh();
+            pontoklabel.Text = pontok.ToString();
             GameGenerate();
         }
     }
