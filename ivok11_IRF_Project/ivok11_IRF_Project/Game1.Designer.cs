@@ -35,6 +35,7 @@ namespace ivok11_IRF_Project
             this.tbresult = new System.Windows.Forms.TextBox();
             this.labelpontok = new System.Windows.Forms.Label();
             this.btnNewGame = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // car1
@@ -96,11 +97,21 @@ namespace ivok11_IRF_Project
             this.btnNewGame.UseVisualStyleBackColor = false;
             this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(284, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Melyik autó a gyorsabb?";
+            // 
             // Game1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.labelpontok);
             this.Controls.Add(this.tbresult);
@@ -122,5 +133,6 @@ namespace ivok11_IRF_Project
         private System.Windows.Forms.TextBox tbresult;
         private System.Windows.Forms.Label labelpontok;
         private System.Windows.Forms.Button btnNewGame;
+        private System.Windows.Forms.Label label1;
     }
 }

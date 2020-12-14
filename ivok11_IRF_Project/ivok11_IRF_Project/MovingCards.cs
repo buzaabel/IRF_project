@@ -19,11 +19,11 @@ namespace ivok11_IRF_Project
             {
                 _value = value;
 
-                if (_value > 500000) BackColor = Color.Brown;
-                if (_value < 500000) BackColor = Color.Red;
-                if (_value < 400000) BackColor = Color.Orange;
-                if (_value < 300000) BackColor = Color.Green;
-                if (_value < 200000) BackColor = Color.Yellow;               
+                if (_value > 10000001) BackColor = Color.Brown;
+                if (_value < 6500000) BackColor = Color.Red;
+                if (_value < 4000000) BackColor = Color.Orange;
+                if (_value < 3000000) BackColor = Color.DarkGreen;
+                if (_value < 1000000) BackColor = Color.Yellow;               
                 
             }
         }
@@ -31,8 +31,8 @@ namespace ivok11_IRF_Project
         bool move = false;
         public MovingCards()
         {
-            Height = 40;
-            Width = 100;
+            Height = 60;
+            Width = 150;
             MouseDown += MovingCards_MouseDown;
             MouseUp += MovingCards_MouseUp;
             MouseMove += MovingCards_MouseMove;

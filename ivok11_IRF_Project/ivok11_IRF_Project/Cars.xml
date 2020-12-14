@@ -1,12 +1,22 @@
 ﻿<root>
   
-  <cars name="Bugatti" model="Veyron" color="Black"> 300000 </cars>   
-  <cars name="Ferrari" model="F4" color="Red"> 200000 </cars>
-  <cars name="Subaru" model="Impreza" color="Blue"> 100000 </cars>
-  <cars name="Lada" model="Niva" color="Black"> 30000 </cars>
-  <cars name="Audi" model="TT" color="Green"> 90000 </cars>
-  <cars name="Mazda" model="6" color="Yellow"> 80000 </cars>
-  <cars name="VolksWagen" model="Passat" color="Blue"> 700000 </cars>
-  <cars name="Toyota" model="Yaris" color="Brown"> 90009 </cars>  
-    
+  <cars name="Audi" model="A8" color="Black"> 12000000 </cars>    
+  <cars name="Audi" model="TT" color="Blue"> 5000000 </cars>
+  <cars name="Renault" model="Clio" color="Black"> 3000000 </cars>
+  <cars name="Ford" model="Focus" color="Green"> 2000000 </cars>
+  <cars name="Mazda" model="6" color="Yellow"> 3500000 </cars>
+  <cars name="VolksWagen" model="Passat" color="Blue"> 5100000 </cars>
+  <cars name="Mercedes" model="E class" color="Black"> 13570000 </cars>
+  <cars name="Ford" model="Mondeo" color="Green"> 980000 </cars>
+  <cars name="Lada" model="Niva" color="Black"> 5750000 </cars>
+  <cars name="Mazda" model="3" color="Brown"> 1540000 </cars>
+  <cars name="Mercedes" model="C-class" color="Green"> 11430000 </cars>
+  <cars name="Peugeot" model="208" color="Blue"> 5170000 </cars>
+  <cars name="Peugeot" model="Expert" color="Black"> 6090000 </cars>
+  <cars name="Toyota" model="Aygo" color="Brown"> 2999000 </cars>
+  <cars name="Toyota" model="Corolla" color="Brown"> 4500000 </cars>
+  <cars name="Honda" model="Civic" color="Brown"> 6387000 </cars>
+  <cars name="Honda" model="HR-V" color="Brown"> 5496000 </cars>
+  <cars name="Ford" model="Orion" color="Brown"> 250000 </cars>
+
 </root>

@@ -32,6 +32,7 @@ namespace ivok11_IRF_Project
             this.LCardsBtn = new System.Windows.Forms.Button();
             this.GuessGamebtn = new System.Windows.Forms.Button();
             this.game1btn = new System.Windows.Forms.Button();
+            this.design1 = new ivok11_IRF_Project.Design();
             this.SuspendLayout();
             // 
             // LCardsBtn
@@ -64,11 +65,21 @@ namespace ivok11_IRF_Project
             this.game1btn.UseVisualStyleBackColor = true;
             this.game1btn.Click += new System.EventHandler(this.game1btn_Click);
             // 
+            // design1
+            // 
+            this.design1.Location = new System.Drawing.Point(347, 245);
+            this.design1.Name = "design1";
+            this.design1.Size = new System.Drawing.Size(102, 45);
+            this.design1.TabIndex = 12;
+            this.design1.Text = "design1";
+            this.design1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.design1);
             this.Controls.Add(this.game1btn);
             this.Controls.Add(this.GuessGamebtn);
             this.Controls.Add(this.LCardsBtn);
@@ -82,6 +93,7 @@ namespace ivok11_IRF_Project
         private System.Windows.Forms.Button LCardsBtn;
         private System.Windows.Forms.Button GuessGamebtn;
         private System.Windows.Forms.Button game1btn;
+        private Design design1;
     }
 }
 
