@@ -11,9 +11,16 @@ namespace ivok11_IRF_Project
     class Design:Button
     {
         Random rnd = new Random();
+        
         public Design()
         {
+            int b = rnd.Next(0, 255);
+            int g = rnd.Next(0, 255);
+            int r = rnd.Next(0, 255);
+            BackColor = Color.FromArgb(r, g, b);
+
             MouseClick += Design_MouseClick;
+            
         }
         
            
@@ -24,8 +31,8 @@ namespace ivok11_IRF_Project
            int g = rnd.Next(0, 255);
            int r = rnd.Next(0, 255);   
            
-           
-           
+           BackColor= Color.FromArgb(r, g, b);
+
         }
     }
 }
