@@ -22,8 +22,7 @@ namespace ivok11_IRF_Project
         public Game1()
         {
             InitializeComponent();
-            XmlRead();
-            GameCreating();
+            XmlRead();            
             this.BackColor = Color.Green;
         }
 
@@ -41,13 +40,13 @@ namespace ivok11_IRF_Project
                 }
             }
 
-            car1.Text = carslist[randomszam1].Name + " " + carslist[randomszam1].Model;
-            car1.Value = carslist[randomszam1].Price;
-            car1.ForeColor = Color.FromName(carslist[randomszam1].Color);
+            Car1.Text = carslist[randomszam1].Name + " " + carslist[randomszam1].Model;
+            Car1.Value = carslist[randomszam1].Price;
+            Car1.ForeColor = Color.FromName(carslist[randomszam1].Color);
 
-            car2.Text = carslist[randomszam2].Name + " " + carslist[randomszam2].Model;
-            car2.Value = carslist[randomszam2].Price;
-            car2.ForeColor = Color.FromName(carslist[randomszam2].Color);
+            Car2.Text = carslist[randomszam2].Name + " " + carslist[randomszam2].Model;
+            Car2.Value = carslist[randomszam2].Price;
+            Car2.ForeColor = Color.FromName(carslist[randomszam2].Color);
         }
 
         private void XmlRead()
@@ -72,60 +71,64 @@ namespace ivok11_IRF_Project
 
         }
 
-        private void btnnext_Click(object sender, EventArgs e)
+        private void Btnnext_Click(object sender, EventArgs e)
         {
             GameCreating();
-            car1.Enabled = true;
-            car2.Enabled = true;
+            Car1.Enabled = true;
+            Car2.Enabled = true;
             tbresult.Text = "";
             labelpontok.Refresh();
+            Btnnext.Enabled = false;
         }
 
-        private void btnNewGame_Click(object sender, EventArgs e)
+        private void BtnNewGame_Click(object sender, EventArgs e)
         {
             GameCreating();
-            car1.Enabled = true;
-            car2.Enabled = true;
-            btnnext.Enabled = true;
+            Car1.Enabled = true;
+            Car2.Enabled = true;
+            Btnnext.Enabled = true;
             tbresult.Text = "";
             pontok = 0;
             labelpontok.Text = pontok.ToString();
+            Btnnext.Enabled = false;
         }
 
-        private void car2_Click(object sender, EventArgs e)
+        private void Car2_Click(object sender, EventArgs e)
         {
-            if (car1.Value < car2.Value)
+            if (Car1.Value < Car2.Value)
             {
                 tbresult.Text = "Helyes válasz";
                 pontok++;
                 labelpontok.Text = pontok.ToString();
+                Btnnext.Enabled = true;
 
             }
             else
             {
                 tbresult.Text = "Rossz válasz";
-                btnnext.Enabled = false;
+                Btnnext.Enabled = false;
             }
-            car1.Enabled = false;
-            car2.Enabled = false;
+            Car1.Enabled = false;
+            Car2.Enabled = false;
         }
 
-        private void car1_Click(object sender, EventArgs e)
+        private void Car1_Click(object sender, EventArgs e)
         {
-            if (car1.Value > car2.Value)
+            if (Car1.Value > Car2.Value)
             {
                 tbresult.Text = "Helyes válasz";
                 pontok++;
                 labelpontok.Text = pontok.ToString();
+                Btnnext.Enabled = true;
 
             }
             else
             {
                 tbresult.Text = "Rossz válasz";
-                btnnext.Enabled = false;
+                Btnnext.Enabled = false;
             }
-            car1.Enabled = false;
-            car2.Enabled = false;
+            Car1.Enabled = false;
+            Car2.Enabled = false;
         }
     }
 }

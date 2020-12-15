@@ -32,12 +32,12 @@ namespace ivok11_IRF_Project
             this.label1 = new System.Windows.Forms.Label();
             this.autotb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.car1btn = new System.Windows.Forms.Button();
-            this.car2btn = new System.Windows.Forms.Button();
-            this.car3btn = new System.Windows.Forms.Button();
-            this.car4btn = new System.Windows.Forms.Button();
-            this.nextbtn = new System.Windows.Forms.Button();
-            this.newgamebtn = new System.Windows.Forms.Button();
+            this.Car1btn = new System.Windows.Forms.Button();
+            this.Car2btn = new System.Windows.Forms.Button();
+            this.Car3btn = new System.Windows.Forms.Button();
+            this.Car4btn = new System.Windows.Forms.Button();
+            this.Nextbtn = new System.Windows.Forms.Button();
+            this.Newgamebtn = new System.Windows.Forms.Button();
             this.pontoklabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -67,75 +67,71 @@ namespace ivok11_IRF_Project
             this.label2.TabIndex = 2;
             this.label2.Text = "?";
             // 
-            // car1btn
+            // Car1btn
             // 
-            this.car1btn.Location = new System.Drawing.Point(295, 117);
-            this.car1btn.Name = "car1btn";
-            this.car1btn.Size = new System.Drawing.Size(116, 53);
-            this.car1btn.TabIndex = 3;
-            this.car1btn.Text = "button1";
-            this.car1btn.UseVisualStyleBackColor = true;
-            this.car1btn.Click += new System.EventHandler(this.car1btn_Click);
+            this.Car1btn.Location = new System.Drawing.Point(295, 117);
+            this.Car1btn.Name = "Car1btn";
+            this.Car1btn.Size = new System.Drawing.Size(116, 53);
+            this.Car1btn.TabIndex = 3;
+            this.Car1btn.UseVisualStyleBackColor = true;
+            this.Car1btn.Click += new System.EventHandler(this.Car1btn_Click);
             // 
-            // car2btn
+            // Car2btn
             // 
-            this.car2btn.Location = new System.Drawing.Point(431, 117);
-            this.car2btn.Name = "car2btn";
-            this.car2btn.Size = new System.Drawing.Size(116, 53);
-            this.car2btn.TabIndex = 4;
-            this.car2btn.Text = "button2";
-            this.car2btn.UseVisualStyleBackColor = true;
-            this.car2btn.Click += new System.EventHandler(this.car2btn_Click);
+            this.Car2btn.Location = new System.Drawing.Point(431, 117);
+            this.Car2btn.Name = "Car2btn";
+            this.Car2btn.Size = new System.Drawing.Size(116, 53);
+            this.Car2btn.TabIndex = 4;
+            this.Car2btn.UseVisualStyleBackColor = true;
+            this.Car2btn.Click += new System.EventHandler(this.Car2btn_Click);
             // 
-            // car3btn
+            // Car3btn
             // 
-            this.car3btn.Location = new System.Drawing.Point(295, 193);
-            this.car3btn.Name = "car3btn";
-            this.car3btn.Size = new System.Drawing.Size(116, 53);
-            this.car3btn.TabIndex = 5;
-            this.car3btn.Text = "button3";
-            this.car3btn.UseVisualStyleBackColor = true;
-            this.car3btn.Click += new System.EventHandler(this.car3btn_Click);
+            this.Car3btn.Location = new System.Drawing.Point(295, 193);
+            this.Car3btn.Name = "Car3btn";
+            this.Car3btn.Size = new System.Drawing.Size(116, 53);
+            this.Car3btn.TabIndex = 5;
+            this.Car3btn.UseVisualStyleBackColor = true;
+            this.Car3btn.Click += new System.EventHandler(this.Car3btn_Click);
             // 
-            // car4btn
+            // Car4btn
             // 
-            this.car4btn.Location = new System.Drawing.Point(431, 193);
-            this.car4btn.Name = "car4btn";
-            this.car4btn.Size = new System.Drawing.Size(116, 53);
-            this.car4btn.TabIndex = 6;
-            this.car4btn.Text = "button4";
-            this.car4btn.UseVisualStyleBackColor = true;
-            this.car4btn.Click += new System.EventHandler(this.car4btn_Click);
+            this.Car4btn.Location = new System.Drawing.Point(431, 193);
+            this.Car4btn.Name = "Car4btn";
+            this.Car4btn.Size = new System.Drawing.Size(116, 53);
+            this.Car4btn.TabIndex = 6;
+            this.Car4btn.UseVisualStyleBackColor = true;
+            this.Car4btn.Click += new System.EventHandler(this.Car4btn_Click);
             // 
-            // nextbtn
+            // Nextbtn
             // 
-            this.nextbtn.Location = new System.Drawing.Point(565, 250);
-            this.nextbtn.Name = "nextbtn";
-            this.nextbtn.Size = new System.Drawing.Size(158, 33);
-            this.nextbtn.TabIndex = 7;
-            this.nextbtn.Text = "Next";
-            this.nextbtn.UseVisualStyleBackColor = true;
-            this.nextbtn.Click += new System.EventHandler(this.nextbtn_Click);
+            this.Nextbtn.Location = new System.Drawing.Point(565, 250);
+            this.Nextbtn.Name = "Nextbtn";
+            this.Nextbtn.Size = new System.Drawing.Size(158, 33);
+            this.Nextbtn.TabIndex = 7;
+            this.Nextbtn.Text = "Next";
+            this.Nextbtn.UseVisualStyleBackColor = true;
+            this.Nextbtn.Click += new System.EventHandler(this.Nextbtn_Click);
             // 
-            // newgamebtn
+            // Newgamebtn
             // 
-            this.newgamebtn.BackColor = System.Drawing.Color.Coral;
-            this.newgamebtn.Location = new System.Drawing.Point(37, 23);
-            this.newgamebtn.Name = "newgamebtn";
-            this.newgamebtn.Size = new System.Drawing.Size(128, 45);
-            this.newgamebtn.TabIndex = 8;
-            this.newgamebtn.Text = "New Game";
-            this.newgamebtn.UseVisualStyleBackColor = false;
-            this.newgamebtn.Click += new System.EventHandler(this.newgamebtn_Click);
+            this.Newgamebtn.BackColor = System.Drawing.Color.Coral;
+            this.Newgamebtn.Location = new System.Drawing.Point(37, 23);
+            this.Newgamebtn.Name = "Newgamebtn";
+            this.Newgamebtn.Size = new System.Drawing.Size(128, 45);
+            this.Newgamebtn.TabIndex = 8;
+            this.Newgamebtn.Text = "New Game";
+            this.Newgamebtn.UseVisualStyleBackColor = false;
+            this.Newgamebtn.Click += new System.EventHandler(this.Newgamebtn_Click);
             // 
             // pontoklabel
             // 
             this.pontoklabel.AutoSize = true;
             this.pontoklabel.Location = new System.Drawing.Point(271, 257);
             this.pontoklabel.Name = "pontoklabel";
-            this.pontoklabel.Size = new System.Drawing.Size(35, 13);
+            this.pontoklabel.Size = new System.Drawing.Size(13, 13);
             this.pontoklabel.TabIndex = 9;
-            this.pontoklabel.Text = "label3";
+            this.pontoklabel.Text = "0";
             // 
             // GuessGameForm
             // 
@@ -143,15 +139,16 @@ namespace ivok11_IRF_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pontoklabel);
-            this.Controls.Add(this.newgamebtn);
-            this.Controls.Add(this.nextbtn);
-            this.Controls.Add(this.car4btn);
-            this.Controls.Add(this.car3btn);
-            this.Controls.Add(this.car2btn);
-            this.Controls.Add(this.car1btn);
+            this.Controls.Add(this.Newgamebtn);
+            this.Controls.Add(this.Nextbtn);
+            this.Controls.Add(this.Car4btn);
+            this.Controls.Add(this.Car3btn);
+            this.Controls.Add(this.Car2btn);
+            this.Controls.Add(this.Car1btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.autotb);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GuessGameForm";
             this.Text = "GuessGameForm";
             this.ResumeLayout(false);
@@ -163,12 +160,12 @@ namespace ivok11_IRF_Project
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button car1btn;
-        private System.Windows.Forms.Button car2btn;
-        private System.Windows.Forms.Button car3btn;
-        private System.Windows.Forms.Button car4btn;
-        private System.Windows.Forms.Button nextbtn;
-        private System.Windows.Forms.Button newgamebtn;
+        private System.Windows.Forms.Button Car1btn;
+        private System.Windows.Forms.Button Car2btn;
+        private System.Windows.Forms.Button Car3btn;
+        private System.Windows.Forms.Button Car4btn;
+        private System.Windows.Forms.Button Nextbtn;
+        private System.Windows.Forms.Button Newgamebtn;
         private System.Windows.Forms.TextBox autotb;
         private System.Windows.Forms.Label pontoklabel;
     }

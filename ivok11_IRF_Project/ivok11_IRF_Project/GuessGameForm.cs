@@ -23,8 +23,7 @@ namespace ivok11_IRF_Project
         public GuessGameForm()
         {
             InitializeComponent();
-            XmlRead();
-            GameGenerate();
+            XmlRead();            
             this.BackColor = Color.Green;
             pontoklabel.Text = pontok.ToString();
         }
@@ -42,13 +41,13 @@ namespace ivok11_IRF_Project
                 randomszamok.Add(number);                
             }
             int q = randomszamok[0];
-            car1btn.Text = carslist[q].Price.ToString();
+            Car1btn.Text = carslist[q].Price.ToString();
             int w = randomszamok[1];
-            car2btn.Text = carslist[w].Price.ToString();
+            Car2btn.Text = carslist[w].Price.ToString();
             int r = randomszamok[2];
-            car3btn.Text = carslist[r].Price.ToString();
+            Car3btn.Text = carslist[r].Price.ToString();
             int t = randomszamok[3];
-            car4btn.Text = carslist[t].Price.ToString();
+            Car4btn.Text = carslist[t].Price.ToString();
 
             int megoldas = rnd.Next(0, 3);
             megoldas2 = randomszamok[megoldas];
@@ -79,19 +78,19 @@ namespace ivok11_IRF_Project
 
         }
 
-        private void car1btn_Click(object sender, EventArgs e)
+        private void Car1btn_Click(object sender, EventArgs e)
         {
            
             
 
-            if (car1btn.Text==carslist[megoldas2].Price.ToString())
+            if (Car1btn.Text==carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = true;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = true;
                 pontok++;
                 pontoklabel.Refresh();
                 pontoklabel.Text = pontok.ToString();
@@ -99,27 +98,27 @@ namespace ivok11_IRF_Project
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = false;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = false;
             }
         }
 
-        private void car2btn_Click(object sender, EventArgs e)
+        private void Car2btn_Click(object sender, EventArgs e)
         {
             
           
 
-            if (car2btn.Text == carslist[megoldas2].Price.ToString())
+            if (Car2btn.Text == carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = true;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = true;
                 pontok++;
                 pontoklabel.Refresh();
                 pontoklabel.Text = pontok.ToString();
@@ -127,27 +126,27 @@ namespace ivok11_IRF_Project
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = false;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = false;
             }
         }
 
-        private void car3btn_Click(object sender, EventArgs e)
+        private void Car3btn_Click(object sender, EventArgs e)
         {
        
            
 
-            if (car3btn.Text == carslist[megoldas2].Price.ToString())
+            if (Car3btn.Text == carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = true;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = true;
                 pontok++;
                 pontoklabel.Refresh();
                 pontoklabel.Text = pontok.ToString();
@@ -155,27 +154,27 @@ namespace ivok11_IRF_Project
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = false;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = false;
             }
         }
 
-        private void car4btn_Click(object sender, EventArgs e)
+        private void Car4btn_Click(object sender, EventArgs e)
         {
             
            
 
-            if (car4btn.Text == carslist[megoldas2].Price.ToString())
+            if (Car4btn.Text == carslist[megoldas2].Price.ToString())
             {
                 MessageBox.Show("Helyes válasz");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = true;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = true;
                 pontok++;
                 pontoklabel.Refresh();
                 pontoklabel.Text = pontok.ToString();
@@ -184,36 +183,37 @@ namespace ivok11_IRF_Project
             else
             {
                 MessageBox.Show("Rossz válasz, a játék véget ért");
-                car1btn.Enabled = false;
-                car2btn.Enabled = false;
-                car3btn.Enabled = false;
-                car4btn.Enabled = false;
-                nextbtn.Enabled = false;
+                Car1btn.Enabled = false;
+                Car2btn.Enabled = false;
+                Car3btn.Enabled = false;
+                Car4btn.Enabled = false;
+                Nextbtn.Enabled = false;
             }
         }
 
-        private void nextbtn_Click(object sender, EventArgs e)
+        private void Nextbtn_Click(object sender, EventArgs e)
         {
-            car1btn.Enabled = true;
-            car2btn.Enabled = true;
-            car3btn.Enabled = true;
-            car4btn.Enabled = true;
-            nextbtn.Enabled = false;
+            Car1btn.Enabled = true;
+            Car2btn.Enabled = true;
+            Car3btn.Enabled = true;
+            Car4btn.Enabled = true;
+            Nextbtn.Enabled = false;
             randomszamok.Clear();
             GameGenerate();
         }
 
-        private void newgamebtn_Click(object sender, EventArgs e)
+        private void Newgamebtn_Click(object sender, EventArgs e)
         {
-            car1btn.Enabled = true;
-            car2btn.Enabled = true;
-            car3btn.Enabled = true;
-            car4btn.Enabled = true;
-            nextbtn.Enabled = true;
+            Car1btn.Enabled = true;
+            Car2btn.Enabled = true;
+            Car3btn.Enabled = true;
+            Car4btn.Enabled = true;
+            Nextbtn.Enabled = true;
+            Nextbtn.Enabled = false;
             randomszamok.Clear();
             pontok = 0;
             pontoklabel.Refresh();
-            pontoklabel.Text = pontok.ToString();
+            pontoklabel.Text = pontok.ToString();            
             GameGenerate();
         }
     }

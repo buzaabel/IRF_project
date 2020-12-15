@@ -87,7 +87,7 @@ namespace ivok11_IRF_Project
             card.Text = carslist[szam].Name + " " + carslist[szam].Model + ": " + carslist[szam].Price.ToString();
         }
 
-        private void filewritingbtn_Click(object sender, EventArgs e)
+        private void Filewritingbtn_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
 

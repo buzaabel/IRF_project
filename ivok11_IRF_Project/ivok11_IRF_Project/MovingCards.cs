@@ -19,7 +19,7 @@ namespace ivok11_IRF_Project
             {
                 _value = value;
 
-                if (_value > 10000001) BackColor = Color.Brown;
+                if (_value > 10000000) BackColor = Color.Brown;
                 if (_value < 6500000) BackColor = Color.Red;
                 if (_value < 4000000) BackColor = Color.Orange;
                 if (_value < 3000000) BackColor = Color.DarkGreen;

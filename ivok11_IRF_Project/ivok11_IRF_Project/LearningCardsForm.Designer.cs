@@ -30,7 +30,7 @@ namespace ivok11_IRF_Project
         private void InitializeComponent()
         {
             this.NewCardBtn = new System.Windows.Forms.Button();
-            this.filewritingbtn = new System.Windows.Forms.Button();
+            this.Filewritingbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NewCardBtn
@@ -43,23 +43,24 @@ namespace ivok11_IRF_Project
             this.NewCardBtn.UseVisualStyleBackColor = true;
             this.NewCardBtn.Click += new System.EventHandler(this.NewCardBtn_Click);
             // 
-            // filewritingbtn
+            // Filewritingbtn
             // 
-            this.filewritingbtn.Location = new System.Drawing.Point(292, 224);
-            this.filewritingbtn.Name = "filewritingbtn";
-            this.filewritingbtn.Size = new System.Drawing.Size(178, 31);
-            this.filewritingbtn.TabIndex = 1;
-            this.filewritingbtn.Text = "Write cards in file";
-            this.filewritingbtn.UseVisualStyleBackColor = true;
-            this.filewritingbtn.Click += new System.EventHandler(this.filewritingbtn_Click);
+            this.Filewritingbtn.Location = new System.Drawing.Point(292, 224);
+            this.Filewritingbtn.Name = "Filewritingbtn";
+            this.Filewritingbtn.Size = new System.Drawing.Size(178, 31);
+            this.Filewritingbtn.TabIndex = 1;
+            this.Filewritingbtn.Text = "Write cards in file";
+            this.Filewritingbtn.UseVisualStyleBackColor = true;
+            this.Filewritingbtn.Click += new System.EventHandler(this.Filewritingbtn_Click);
             // 
             // LearningCardsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.filewritingbtn);
+            this.Controls.Add(this.Filewritingbtn);
             this.Controls.Add(this.NewCardBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LearningCardsForm";
             this.Text = "LearningCardsForm";
             this.ResumeLayout(false);
@@ -69,6 +70,6 @@ namespace ivok11_IRF_Project
         #endregion
 
         private System.Windows.Forms.Button NewCardBtn;
-        private System.Windows.Forms.Button filewritingbtn;
+        private System.Windows.Forms.Button Filewritingbtn;
     }
 }

@@ -29,46 +29,24 @@ namespace ivok11_IRF_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.car1 = new ivok11_IRF_Project.PlayingButton();
-            this.car2 = new ivok11_IRF_Project.PlayingButton();
-            this.btnnext = new System.Windows.Forms.Button();
+            this.Btnnext = new System.Windows.Forms.Button();
             this.tbresult = new System.Windows.Forms.TextBox();
             this.labelpontok = new System.Windows.Forms.Label();
-            this.btnNewGame = new System.Windows.Forms.Button();
+            this.BtnNewGame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Car2 = new ivok11_IRF_Project.PlayingButton();
+            this.Car1 = new ivok11_IRF_Project.PlayingButton();
             this.SuspendLayout();
             // 
-            // car1
+            // Btnnext
             // 
-            this.car1.Location = new System.Drawing.Point(287, 123);
-            this.car1.Name = "car1";
-            this.car1.Size = new System.Drawing.Size(140, 62);
-            this.car1.TabIndex = 4;
-            this.car1.Text = "playingButton1";
-            this.car1.UseVisualStyleBackColor = true;
-            this.car1.Value = 0;
-            this.car1.Click += new System.EventHandler(this.car1_Click);
-            // 
-            // car2
-            // 
-            this.car2.Location = new System.Drawing.Point(477, 123);
-            this.car2.Name = "car2";
-            this.car2.Size = new System.Drawing.Size(140, 62);
-            this.car2.TabIndex = 5;
-            this.car2.Text = "playingButton2";
-            this.car2.UseVisualStyleBackColor = true;
-            this.car2.Value = 0;
-            this.car2.Click += new System.EventHandler(this.car2_Click);
-            // 
-            // btnnext
-            // 
-            this.btnnext.Location = new System.Drawing.Point(530, 238);
-            this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(103, 28);
-            this.btnnext.TabIndex = 9;
-            this.btnnext.Text = "Következő";
-            this.btnnext.UseVisualStyleBackColor = true;
-            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
+            this.Btnnext.Location = new System.Drawing.Point(530, 238);
+            this.Btnnext.Name = "Btnnext";
+            this.Btnnext.Size = new System.Drawing.Size(103, 28);
+            this.Btnnext.TabIndex = 9;
+            this.Btnnext.Text = "Következő";
+            this.Btnnext.UseVisualStyleBackColor = true;
+            this.Btnnext.Click += new System.EventHandler(this.Btnnext_Click);
             // 
             // tbresult
             // 
@@ -86,25 +64,45 @@ namespace ivok11_IRF_Project
             this.labelpontok.TabIndex = 11;
             this.labelpontok.Text = "label1";
             // 
-            // btnNewGame
+            // BtnNewGame
             // 
-            this.btnNewGame.BackColor = System.Drawing.Color.Coral;
-            this.btnNewGame.Location = new System.Drawing.Point(46, 39);
-            this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(106, 44);
-            this.btnNewGame.TabIndex = 12;
-            this.btnNewGame.Text = "New Game";
-            this.btnNewGame.UseVisualStyleBackColor = false;
-            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
+            this.BtnNewGame.BackColor = System.Drawing.Color.Coral;
+            this.BtnNewGame.Location = new System.Drawing.Point(46, 39);
+            this.BtnNewGame.Name = "BtnNewGame";
+            this.BtnNewGame.Size = new System.Drawing.Size(106, 44);
+            this.BtnNewGame.TabIndex = 12;
+            this.BtnNewGame.Text = "New Game";
+            this.BtnNewGame.UseVisualStyleBackColor = false;
+            this.BtnNewGame.Click += new System.EventHandler(this.BtnNewGame_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(284, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 13);
+            this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Melyik autó a gyorsabb?";
+            this.label1.Text = "Melyik autó a drágább?";
+            // 
+            // Car2
+            // 
+            this.Car2.Location = new System.Drawing.Point(477, 123);
+            this.Car2.Name = "Car2";
+            this.Car2.Size = new System.Drawing.Size(140, 62);
+            this.Car2.TabIndex = 5;
+            this.Car2.UseVisualStyleBackColor = true;
+            this.Car2.Value = 0;
+            this.Car2.Click += new System.EventHandler(this.Car2_Click);
+            // 
+            // Car1
+            // 
+            this.Car1.Location = new System.Drawing.Point(287, 123);
+            this.Car1.Name = "Car1";
+            this.Car1.Size = new System.Drawing.Size(140, 62);
+            this.Car1.TabIndex = 4;
+            this.Car1.UseVisualStyleBackColor = true;
+            this.Car1.Value = 0;
+            this.Car1.Click += new System.EventHandler(this.Car1_Click);
             // 
             // Game1
             // 
@@ -112,12 +110,13 @@ namespace ivok11_IRF_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnNewGame);
+            this.Controls.Add(this.BtnNewGame);
             this.Controls.Add(this.labelpontok);
             this.Controls.Add(this.tbresult);
-            this.Controls.Add(this.btnnext);
-            this.Controls.Add(this.car2);
-            this.Controls.Add(this.car1);
+            this.Controls.Add(this.Btnnext);
+            this.Controls.Add(this.Car2);
+            this.Controls.Add(this.Car1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Game1";
             this.Text = "Game1";
             this.ResumeLayout(false);
@@ -127,12 +126,12 @@ namespace ivok11_IRF_Project
 
         #endregion
 
-        private PlayingButton car1;
-        private PlayingButton car2;
-        private System.Windows.Forms.Button btnnext;
+        private PlayingButton Car1;
+        private PlayingButton Car2;
+        private System.Windows.Forms.Button Btnnext;
         private System.Windows.Forms.TextBox tbresult;
         private System.Windows.Forms.Label labelpontok;
-        private System.Windows.Forms.Button btnNewGame;
+        private System.Windows.Forms.Button BtnNewGame;
         private System.Windows.Forms.Label label1;
     }
 }
