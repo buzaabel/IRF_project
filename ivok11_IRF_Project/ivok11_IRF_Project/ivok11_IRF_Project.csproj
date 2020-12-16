@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\Cars.cs" />
-    <Compile Include="Design.cs">
+    <Compile Include="classes\Design.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\Form1.cs">
